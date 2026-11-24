@@ -2,7 +2,9 @@
 
 CES 2026（2026年1月6〜9日、ラスベガス）で発表された、AIを“モノ”に載せた製品の事例集です。
 
-**ページ：** https://takaharukanai.github.io/ces2026-ai-physical/
+**ページ：**
+- イラスト版：https://takaharukanai.github.io/ces2026-ai-physical/
+- 実写版：https://takaharukanai.github.io/ces2026-ai-physical/photo.html （各社の公式サイト・プレスリリースの写真を、各社のサーバーから表示）
 
 - 7つの分類で54件を掲載しています（小さく尖った単機能／いつものモノにAIを足して再定義／身体・感覚を補う／AIコンパニオン／大手のヒューマノイド・家事ロボ／日本勢／現場で働くAI）。
 - CES Innovation Awards 2026の「Best of Innovation」と受賞（Honoree）にはバッジを付けています。
