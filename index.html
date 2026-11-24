@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>CES 2026 AI×フィジカル事例集</title>
+<style>
+:root{--bg:#F7F9FC;--card:#FFFFFF;--ink:#14213D;--sub:#4A5568;--line:#DCE3EC;--navy:#2F5597;--navy2:#1F587D;--chip:#EEF3F8;--imgbg:#F2F2F2;--acc:#C2410C;--gold:#8A5A00;--goldbg:#FFF4D6;--goldln:#E8C770}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#111827;--card:#1A2333;--ink:#E8EDF5;--sub:#A9B4C4;--line:#2C3A50;--navy:#8FB0F0;--navy2:#9CC7E6;--chip:#243248;--imgbg:#202A3A;--acc:#FDBA8C;--gold:#F5D58A;--goldbg:#3A3018;--goldln:#7A6326}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",Arial,sans-serif;line-height:1.6}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+header{padding:32px 0 8px}
+h1{font-size:30px;margin:0 0 4px}
+.catch{font-size:18px;font-weight:700;margin:0 0 10px}
+.lead{color:var(--sub);margin:0 0 16px;font-size:14px}
+.lead a{color:var(--navy)}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+nav a,nav button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 12px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer;text-decoration:none}
+nav button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+section{margin:28px 0 8px}
+.sh{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 12px}
+.num{background:var(--acc);color:#fff;font-weight:700;border-radius:6px;padding:0 10px;font-size:18px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .num{color:#111827}}
+h2{font-size:22px;margin:0}
+.sd{color:var(--sub);font-size:14px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.img{aspect-ratio:4/3;background:var(--imgbg);display:block;position:relative}
+.img img{width:100%;height:100%;object-fit:cover;display:block}
+.ill{position:absolute;right:8px;bottom:8px;font-size:11px;padding:2px 8px;border-radius:999px;background:rgba(20,33,61,.62);color:#fff}
+.foot .ph{font-size:12px}
+.img .ng{position:absolute;inset:0;display:none;align-items:center;justify-content:center;color:var(--sub);font-size:13px;padding:12px;text-align:center}
+.img.broken img{display:none}.img.broken .ng{display:flex}
+.badge{position:absolute;left:10px;top:10px;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--goldbg);color:var(--gold);border:1px solid var(--goldln);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.badge.best::before{content:"★ "}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:4px;flex:1}
+h3{font-size:17px;margin:0;line-height:1.4}
+.co{font-size:13px;color:var(--acc);margin:0}
+.desc{font-size:14px;margin:4px 0 0;flex:1}
+.foot{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-top:8px;flex-wrap:wrap}
+.link{font-size:13px;color:var(--navy);text-decoration:none}
+.link:hover{text-decoration:underline}
+.cr{font-size:11px;color:var(--sub)}
+footer{color:var(--sub);font-size:13px;padding:24px 0 40px}
+@media (max-width:600px){.wrap{padding:0 16px}h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>CES 2026 AI×フィジカル事例集</h1>
+<p class="catch">AIはもう前提。その上に、どんな体験を“モノ”として載せるか。</p>
+<p class="lead">開催：2026年1月6〜9日（ラスベガス）。出展は4,100社超、うちスタートアップ約1,200社。<br>★のバッジは<a href="https://www.ces.tech/ces-innovation-awards/?year=2026&type=Best+of+Innovation" target="_blank" rel="noopener">CES Innovation Awards 2026</a>の最高評価「Best of Innovation」、無印のバッジは同アワードの受賞（Honoree）です。価格・発売時期は主に2026年1〜2月の報道時点のものです。<br>各カードの絵は、製品の使い方の場面をAI（Midjourney）で描いたイメージ図で、実物の形とは異なります。実物は「実物の写真」のリンクから各社の公式ページでご覧ください。</p>
+<nav id="nav"></nav>
+</header>
+<main id="main"></main>
+<footer>カードの絵はすべてMidjourneyで生成したイメージ図で、特定の製品の写真やデザインを元にしたものではありません。「実物の写真」のリンク先は、各メーカーの公式サイト・ニュースルーム、または各社が配信したプレスリリース（PR Newswire）の画像です（著作権は各社に帰属します）。製品名・社名は各社の商標です。掲載に問題がある場合はご連絡ください。速やかに対応します。2026年11月時点の情報です。</footer>
+</div>
+<script>
+const PR=(id,f,p)=>"https://mma.prnewswire.com/media/"+id+"/"+f+"?p="+(p||"publish");
+const CES=s=>"https://www.ces.tech/ces-innovation-awards/2026/"+s+"/";
+const CATS=[
+ [1,"小さく尖った単機能","創業者に一番刺さる枠。誰のどの困りごとかが一言で言える。"],
+ [2,"いつものモノにAIを足して再定義","身の回りの家電・道具の延長線。LEGOは「AIなし」の対比として。"],
+ [3,"身体・感覚を補う","今年いちばん“人に近い”潮流。デジタルヘルス・アクセシビリティ・ロンジェビティ。"],
+ [4,"AIコンパニオン","“いるだけ”で価値がある、相棒・見守り系。"],
+ [5,"大手のヒューマノイド・家事ロボ","背景として。大手は総力戦、小さな創業者は単機能×ニッチで。"],
+ [6,"日本勢","ジェトロのJapanパビリオン（31社）と、大手の部品・技術。"],
+ [7,"現場で働くAI（産業・インフラ・モビリティ）","工場・建設・農業・災害・移動の現場で、測って・判断して・動く。"]
+];
+// [分類, 名前, 会社, 説明, 画像URL, ページURL, バッジ("best"|"hon"|"")]
+const D=[
+[1,"Throne One","Throne（米国）","トイレに付けるカメラ＋AI。便の状態・消化・水分を見守る「トイレのウェアラブル」。共同創業者はWhoopの共同創業者。","https://cdn.shopify.com/s/files/1/0869/3199/6963/files/01-device-closeup_e86b5281-3650-4128-9d19-8ee55b857fa1.webp?v=1794612729","https://thronescience.com/products/throne-one",""],
+[1,"Pawkeyland AI Smart Collar","Pawkeyland","犬猫の位置・睡眠・気分を追う首輪。AIチャットで「うちの子どう？」に答える。Eureka Park出展。","https://cdn.shopify.com/s/files/1/0703/5987/5773/files/17_c94fd2a2-b80e-40a3-941d-d1be80d55702.png?v=1795082856","https://pawkeylandpet.com/products/cat-product1",""],
+[1,"SATELLAI Collar Go","SATELLAI","AI搭載のGPS首輪。行動の異常を検知、IP68、電池は最大15日。CES発表時79.99ドル（現在の公式価格は79ドル）。","https://satellai.com/cdn/shop/files/collar_go-black.jpg?v=1761658871","https://satellai.com/products/satellai-collar-go",""],
+[1,"Sweekar","Takway（中国）","卵から育つ手のひらサイズのAIペット。話しかけると成長し、放っておくと“死ぬ”。150ドル、Kickstarterで販売。","https://sweekar.ai/images/hero/desktop-1.webp","https://sweekar.ai/",""],
+[1,"Glyde スマートバリカン","Glyde（中国）","手の動きを検知し、速く動かしすぎると刃が引っ込む。アプリで髪型を案内。AIでなくセンサーで「失敗しない」を実現。","https://cdn.shopify.com/s/files/1/0986/8237/2379/files/GLYDE-White.png?v=1795427682","https://glydeclipper.com/",""],
+[1,"SwitchBot AI MindClip","SwitchBot","襟に付ける18gの録音・要約クリップ。「第二の脳」。CESで展示後、119.99ドルで発売。","https://us.switch-bot.com/cdn/shop/files/AI_MindClip_JP_Main_Images_2000x2000_01_2x-2_1200x1200.webp?v=1794477580","https://us.switch-bot.com/products/switchbot-ai-mindclip",""],
+[1,"Subtle Voicebuds","Subtle（スタートアップ）","騒がしい場所や囁き声でも文字起こしできるイヤホン。端末内の小さなAIとクラウドのAIを使い分け。Engadget「Best AI hardware」。","https://cdn.prod.website-files.com/68530299fb95a69ba6a202bc/6afe1d30cd1b80d95573d24a_voicebuds-white-and-black-table.jpg","https://www.subtle.co/voicebuds",""],
+[1,"Rokid AI Glasses Style","Rokid（中国）","画面のないAIメガネ、38.5g。翻訳・音楽・撮影。“削る”ことで普通のメガネに近づけた。","https://global.rokid.com/cdn/shop/files/002_bec55c7c-a573-496d-8894-64dfd966cede.jpg?v=1788761083","https://global.rokid.com/products/rokid-ai-glasses-style",""],
+[1,"ZONE HSS1","CT5（韓国）","生成AIと話すための、耳をふさがないウェアラブル。スマートグラスの弱点だった電池・複数人利用・プライバシーを、形から解き直した。","https://wisezone.ai/assets/tour-guide-traveller.jpg","https://wisezone.ai/","best"],
+
+[2,"Dreame Pilot 20","Dreame（中国）","頭皮の状態を見て温度・風量・乾かし方を調整するAIドライヤー。2本のアームを持つ構成として発表。※アームが写った公式写真は未公開のため、発表リリースの写真（本体とアプリ）を掲載。",PR(2856358,"2.jpg"),"https://www.prnewswire.com/news-releases/dreame-debuts-revolutionary-hair-care-lineup-at-ces-2026-ai-powered-pilot-20-hair-dryer-features-dual-robotic-arms-for-proactive-care-302654903.html",""],
+[2,"Govee Ceiling Light Ultra","Govee","616個のLEDで、AIが生成した絵を天井に映すシーリングライト。","https://cdn.shopify.com/s/files/1/0512/3489/8105/files/ID2_2x_621e6287-86fb-4660-b859-1ae661e3dd48.png?v=1776941242","https://us.govee.com/products/govee-21-inch-smart-ceiling-light-ultra",""],
+[2,"GE Profile 冷蔵庫（Kitchen Assistant）","GE Appliances（米国）","ディスペンサー横のスキャナーにバーコードをかざすと、買い物リストに入る。","https://cdn11.bigcommerce.com/s-pacto3wrn2/images/stencil/original/products/426580/1213776/uahj3wfyolu5hw5qeqpu__21499.1784732767.jpg","https://www.geappliances.com/profile-4-door-kitchen-assistant-refrigerator",""],
+[2,"Even Realities G2","Even Realities","普通のメガネの見た目で、会話の補助・翻訳・カンペ（テレプロンプター）を表示。カメラなし。","https://cdn.sanity.io/images/wfyhg2qw/production/fa29f360026bf5c4e080b217180e646d580402f3-1200x630.jpg","https://www.evenrealities.com/smart-glasses",""],
+[2,"Perisphere","Geeks Loft","音だけだったヘッドホンに「目」を足した。倒すと現れるディスプレイと内蔵カメラで、見ている世界をAIと共有する。","https://www.geeksloft.com/images/homepage-watch.png","https://www.geeksloft.com/","best"],
+[2,"Lockin AI Smart Lock","Lockin（中国）","手のひら・指の静脈で開くAIスマートロック。解錠0.17秒、Matter対応。玄関の鍵を“顔パス”ならぬ“手パス”に。",PR(2853911,"349B474F_BF3E_7E49_C1666ACA2FF24710.jpg"),"https://lockin.com/","best"],
+[2,"Birdfy Feeder Vista","Birdfy","360度カメラ付きの鳥用の餌台。来た鳥を撮影・記録。","https://www.birdfy.com/cdn/shop/files/page-vista-section1-pc.png?v=1767162017&width=1500","https://www.birdfy.com/pages/feeder-vista",""],
+[2,"Birdfy Bath Pro","Birdfy","同じBirdfyの、カメラ付きスマート水浴び場。ソーラー噴水まで備え、庭を野鳥の観察スタジオにする。","https://cdn.shopify.com/s/files/1/0782/9346/7416/files/Birdfy_Bath_Pro_White_1920_x_1080.png?v=1778740383","https://www.birdfy.com/products/birdfy-bath-pro","best"],
+[2,"Dreame X60 Max Ultra Complete","Dreame（中国）","脚で敷居や低い段差（二段で最大8.8cm）を越えるロボット掃除機。","https://cdn.shopify.com/s/files/1/0553/1320/3405/files/X60_Max_Ultra_Complete3-kv.webp?v=1776162425","https://www.dreametech.com/products/x60-max-ultra-complete-robot-vacuum",""],
+[2,"Roborock Saros Rover","Roborock（中国）","脚で階段を登るロボット掃除機。会場ではデモ展示の試作機。",PR(2859022,"Roborock_Saros_Rover.jpg"),"https://www.prnewswire.com/il/news-releases/ces-2026-roborock-releases-the-worlds-first-robotic-vacuum-with-wheel-leg-architecture-as-it-joins-hands-with-real-madrid-football-club-302658214.html",""],
+[2,"LEGO Smart Brick（SMART Play）","LEGO（デンマーク）","AIは使わず、センサーとスピーカーで動きに反応するブロック。「AIでなくても体験が良ければ勝てる」の対比に。","https://www.lego.com/cdn/cs/aboutus/assets/blt33f1f8b4089b8256/SMARTBrick_16x9.jpg?width=1200","https://www.lego.com/en-us/smart-play",""],
+
+[3,"SeeHaptic","SeeHaptic（フランス）","メガネのカメラ映像を奥行きの地図に変え、腰のベルトの256個のソレノイドの振動で障害物の方向を伝える。","https://cdn.prod.website-files.com/691b14f149d4db34faaed09c/69414e57eeadbe180e03cd8a_58877719b9dcfcaba72429d27a04c67a_Etape%202%20-%20ceinture%20haptique.jpg","https://www.seehaptic.com/le-produit",""],
+[3,"HapWare ALEYE","HapWare（米国）","メガネのカメラで相手の表情を読み、感情を手首の振動で伝えるリストバンド。359ドルで予約受付（展示は試作）。","https://hapware.com/images/ALEYE_on_Wrist.png","https://hapware.com/",""],
+[3,"Dephy Sidekick","Dephy（米国・MIT発）","足首の動きをモーターで補助する歩行アシスト。4,500ドル、米国で直販。",PR(2855068,"Dephy_Sidekick.jpg"),"https://dephy.com/sidekick",""],
+[3,"Hypershell X Ultra","Hypershell","歩く・走るペースに合わせて補助する装着型の外骨格。カーボン・チタン製。",PR(2766151,"Compressed_HYPERSHELL.jpg"),"https://hypershell.tech/products/hypershell-x-ultra",""],
+[3,"PF-Sweat Patch","Point Fit Technology（香港）","指先ほどのパッチで汗の乳酸を測る。","https://pointfittech.com/images/home/about/exercisenormally.webp","https://pointfittech.com/","hon"],
+[3,"Naqi Neural Earbuds","Naqi Logix","イヤホンを神経インターフェースに変える。脳に埋め込まずに、顔のわずかな動きで機器を手を使わずに操作できる。","https://static.wixstatic.com/media/5cd183_2c655843bf3d4e279f3e593447f09138~mv2.jpg","https://www.naqilogix.com/","best"],
+[3,"SCAR","Kolmar Korea","AIが肌を診て、圧電素子で薬と色を“打ち分ける”。傷あとの治療とカバーを一台でこなす美容機器。",PR(2856222,"Photo_2.jpg"),"https://www.prnewswire.com/il/news-releases/kolmar-korea-wins-ces-2026-best-of-innovation-award-in-beauty-tech-a-global-first-for-the-cosmetics-industry-302654766.html","best"],
+[3,"Strutt ev¹","Strutt（シンガポール）","一人乗りの電動モビリティ。「Co-Pilot」が周囲を読み取り、運転をさりげなく補い続ける。",PR(2814574,"Strutt_user.jpg"),"https://strutt.inc/pages/strutt-ev1c","best"],
+
+[4,"Lepro Ami","Lepro","目線を追う8インチ曲面ディスプレイの卓上AIコンパニオン。データは端末内保存、カメラ・マイクに物理シャッター。",PR(2854031,"Lepro_Ami.jpg","facebook"),"https://www.prnewswire.com/news-releases/lepro-unveils-lepro-ami-at-ces-2026-a-desktop-ai-companion-that-feels-in-the-room-302652207.html",""],
+[4,"An'An","Mind with Heart Robotics","高齢者ケア向けのパンダ型・感情AIロボット。前年版から改良し、電池は最大5時間。",PR(2853265,"0017_1.jpg"),"https://www.prnewswire.com/news-releases/mind-with-heart-robotics-showcases-emotionally-intelligent-robot-lineup-at-ces-2026-including-ces-innovation-award-honoree-anan-biomimetic-affective-ai-panda-302651524.html",""],
+[4,"Razer Project AVA","Razer（米国）","5.5インチのホログラムで現れるデスクの相棒。eスポーツのAIコーチから発展。2026年中の発売予定。","https://assets2.razerzone.com/images/pnx.assets/63f6a5fa6ef8d765113de99bc63fe2eb/razer-ava-2026-q4-ogimage_1200x630.webp","https://www.razer.com/razer-ava",""],
+[4,"Nirva","Nirva","ネックレス・ブレスレット型。行動や気分を記録して日記にする。Tom's Guide「Best AI wearable」。",PR(2853910,"Nirva_Necklace_and_Bracelet.jpg","facebook"),"https://www.prnewswire.com/news-releases/nirva-ai-jewelry-unveiled-at-ces---the-worlds-most-beautiful-and-insightful-ai-wearable-302652347.html",""],
+
+[5,"Atlas（製品版）","Boston Dynamics／現代自動車グループ","製品版を発表し生産開始。年3万台規模の工場を建設中。2026年分は現代自動車グループ等に全量割り当て。","https://bostondynamics.com/wp-content/uploads/2026/01/atlas-announcement.jpg","https://bostondynamics.com/products/atlas/",""],
+[5,"LG CLOiD","LG（韓国）","両腕・5本指の家事ロボット。タオルを畳み、食器を食洗機へ。発売時期は未発表。","https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/home-appliance-solution/lg-electronics-presents-lg-cloid-home-robot-to-demonstrate-zero-labor-home-at-ces-2026/press-setting-image-desktop-tablet-cloid.png","https://www.lg.com/global/newsroom/news/home-appliance-solution/lg-electronics-presents-lg-cloid-home-robot-to-demonstrate-zero-labor-home-at-ces-2026/",""],
+[5,"SwitchBot onero H1","SwitchBot","洗濯物を拾って洗濯機に入れる家事ロボット。Engadget「Best robot」。1万ドル未満の見込み。",PR(2853899,"02___Key_Visual.jpg","medium"),"https://www.switch-bot.com/products/onero-h1",""],
+[5,"Tiiny AI Pocket Lab","Tiiny","手のひらサイズで80GBメモリ。AIをクラウドなしで端末内で動かすポケットAIコンピュータ。",PR(2857394,"TiinyAI_CES.jpg"),"https://www.tiiny.ai/",""],
+
+[6,"SHOSABI（所作美）","SHOSABI（三菱ケミカル発）","姿見型モニターとセンサーで動きを解析し、その場でフィードバック。ドバイ・英国の高級ジムに導入。","https://shosabi.jp/img/product01.png","https://shosabi.jp/","hon"],
+[6,"Wearphone（着るスマホ）","Verne Technologies","周りに声が漏れないマスク型の通話デバイス。ビジネス用途で引き合い多数。","https://framerusercontent.com/images/E3TcBHgSeyFNy3BuVD1eNoMbx1w.jpg","https://verne-tech.com/en/wearphone/waitlist/",""],
+[6,"StA²BLE 2.0","UNTRACKED","微振動とフォースプレートで、約1分で転倒リスクを評価。病院・介護施設・工場で導入。","https://sta2ble.untracked.co.jp/wp-content/uploads/2026/08/image202608261502-708x1024.png","https://sta2ble.untracked.co.jp/","hon"],
+[6,"ORPHE INSOLE","ORPHE","スマートシューズの先駆けが、靴から中敷きへ。圧力センサー6個と6軸センサーを薄い中敷きに収め、24時間以上、歩き方・走り方を測り続ける。","https://storage.googleapis.com/production-os-assets/assets/2bb3d726-14df-4ebb-a671-99ec3913846a","https://orphe.io/insole","best"],
+[6,"mask voice clip","村田製作所","マスクに付けて、話している本人の声だけを拾うクリップ（試作、製品化は未定）。","https://collaboration.murata.com/asset/img/projects/themes/mask-voice-clip/ogp.jpg","https://collaboration.murata.com/en-global/projects/themes/mask-voice-clip/",""],
+[6,"ウェアラブル空中ディスプレイ","京セラ","メタレンズで小型化した腕時計型の空中ディスプレイ（試作）。※画像はレンダリング。","https://global.kyocera.com/newsroom/news/img/babc1edde897ca9375692000a2439e9b.png","https://global.kyocera.com/newsroom/news/2025/001147.html",""],
+[6,"AIsight SED0112","TDK","AIメガネ向けの超低消費電力チップ。視線の意図検出に最適化。※図はこのチップを使うAIメガネの参照設計の分解図。","https://cdn.prod.website-files.com/6938d095af08e4bc2e6fe812/6a865f88b553fd84ef54e888_exploded%20view_updated_callouts_compressed.png","https://aisight.tdk.com/",""],
+
+[7,"Scan&Go","Doosan Robotics／Maple Advanced Robotics","自動運転フォークリフトにロボットアームを載せた“動く工房”。3Dで形を読み取って作業経路をAIが描くので、CADもプログラムも要らない。航空機の胴体の研磨や検査に。","https://www.doosanrobotics.com/robotics/news/editor/7d2f4488-a6a2-4919-aea7-7a3c2cc5eee8.jpg","https://www.doosanrobotics.com/en/about/promotion/news/view/114","best"],
+[7,"JLG Boom Lift with Robotic End Effector","Oshkosh（米国）","高所作業車の先にロボットアーム。人が乗って登っていた溶接・点検・取り付けを、機械が自分でこなす。","https://www.oshkoshcorp.com/-/media/Oshkosh/OshkoshCorp/blog/2025/12-17-25-ces-2026-what-to-expect-oshkosh/2025-12-17-ces-what-to-expect-blog-jlg-end-effector.jpg","https://www.oshkoshcorp.com/blog/2025/12-17-25-ces-2026-what-to-expect-oshkosh","best"],
+[7,"MobED","現代自動車","4輪を別々に制御し、段差でも水平を保つ移動ロボットの“台車”。レールとAPIを開放し、上に何を載せるかは使い手が決める。","https://www.hyundaimotorgroup.com/image/upload/asset_library/MDA00000000000074102/ada5ea4c91404a1586d2c29aa83d9ce7.jpg","https://robotics.hyundai.com/unveiled-robots/mobile/mobedNew.do","best"],
+[7,"LyteVision","Lyte AI（米国）","4Dセンシング・カラー映像・動きの検知を一つにまとめた、ロボットのための“目”。ケーブル1本で空間と映像を渡す。","https://media.base44.com/images/public/691d45a813e743f6146d0261/21ddc83bd_LyteVision_Render.png","https://lyte.ai/","best"],
+[7,"ALPON X5 AI Edge Computer","Sixfab","Raspberry Pi CM5＋AIチップで、映像とセンサーを現場で解析。生データは外に出さず、必要なときだけ匿名化した結果を送る。",PR(2836573,"1.jpg"),"https://shop.sixfab.com/products/alpon-x5-ai","best"],
+[7,"Smart Firefighting Robot","Widemount Dynamics","煙でカメラもGPSも効かない火災現場を、ミリ波レーダーで地図を描きながら進む自律消火ロボット。","https://www.widemount.com/public/upload/d1/c3716ae65513cfcad2cc4b477057d9.png","https://www.widemount.com/list/26","best"],
+[7,"Hydro Hawk","DummDumm（韓国）","“ラボを水辺に連れていく”水質調査ドローン。危険な場所へ飛び、狙った深さで最大4リットルを採水してその場で分析。","https://cdn.imweb.me/thumbnail/20250905/0f7dcb8345c57.jpg","https://www.dummdumm.global/51","best"],
+[7,"Robotic Canopy","BIENESIS（ミシュラン発）","ぶどう畑に“自動で開閉する屋根”。霜・ひょう・日焼け・雨から作物を守る。","https://bienesis.fr/wp-content/uploads/2026/10/Bienesis-startup-agrotech-vignoble-benefice14.jpg","https://bienesis.fr/en/the-canopy/","best"],
+[7,"C3DT EVO","Creative 3D Technologies（米国）","3Dプリント・切削・レーザー・部品の組み付けを一台でこなす“箱の中の工場”。工具の付け替えで工程を切り替える。","https://creative-3d-solutions.pages.dev/media/images/original/evo_main.webp","https://creative-3d-solutions.pages.dev/","best"],
+[7,"Gency Studio","STUDIO LAB（韓国）","AI・ロボット・XRのメディアアートで、店舗を没入型の体験空間に。ブランドのコンテンツ制作も自動化する。","https://static.wixstatic.com/media/d2b27b_a7a6a78a77c7485caffff101b160f559~mv2.png","https://www.studiolab.ai/en/tech","best"],
+[7,"LG AI-powered In-Vehicle Solutions","LG Electronics","透明OLEDのフロントガラス表示、車内センシング、端末上のAIを組み合わせた、クルマの中の体験一式。","https://www.lg.com/content/dam/channel/wcms/global/newsroom/news/vehicle-component-solutions/lg-showcases-future-of-mobility-with-ai-powered-in-vehicle-solutions-at-ces-2026/LG-AI-Powered-In-Vehicle-Solutions_image-2.png","https://www.lg.com/global/newsroom/news/vehicle-solutions/lg-showcases-future-of-mobility-with-ai-powered-in-vehicle-solutions-at-ces-2026/","best"]
+];
+const IL=["throne.jpg","pawkey","satellai","sweekar","glyde","mindclip","subtle","rokid","zone","dreamepilot","govee","ge","even","peri","lockin","birdfyv","birdfyb","x60","roborock","lego","seehaptic","hapware","dephy","hypershell","pf","naqi","scar","strutt","lepro","anan","razer","nirva","atlas","cloid","onero","tiiny","shosabi","wearphone","stable","orphe","murata","kyocera","tdk","scango","jlg","mobed","lyte","alpon","fire","hydro","canopy","evo","gency","lgive"];
+D.forEach((r,i)=>r.push("ces_illustrations/ces_"+(IL[i].includes(".")?IL[i]:IL[i]+".webp")));
+const CR={"Birdfy Bath Pro":"birdfy.com","Naqi Neural Earbuds":"naqilogix.com","ORPHE INSOLE":"orphe.io","LyteVision":"lyte.ai","Hydro Hawk":"dummdumm.global","MobED":"hyundaimotorgroup.com","Gency Studio":"studiolab.ai"};
+const hn=u=>new URL(u).hostname.replace(/^www\./,'');
+const credit=(name,img,url)=>{if(CR[name])return CR[name];if(hn(img)==='mma.prnewswire.com')return 'PR Newswire（各社の配信）';const p=hn(url);return p==='ces.tech'?hn(img):p;};
+const main=document.getElementById('main'),nav=document.getElementById('nav');
+const fb=document.createElement('button');fb.textContent='★ アワード受賞のみ';fb.setAttribute('aria-pressed','false');nav.appendChild(fb);
+for(const [n,t,s] of CATS){
+  const items=D.filter(r=>r[0]===n);
+  const a=document.createElement('a');a.href='#c'+n;a.textContent=n+' '+t+'（'+items.length+'）';nav.appendChild(a);
+  const sec=document.createElement('section');sec.id='c'+n;
+  sec.innerHTML='<div class="sh"><span class="num">'+n+'</span><h2></h2><p class="sd"></p></div><div class="grid"></div>';
+  sec.querySelector('h2').textContent=t;sec.querySelector('.sd').textContent=s;
+  const g=sec.querySelector('.grid');
+  for(const [,name,co,desc,img,url,bd,il] of items){
+    const c=document.createElement('article');c.className='card';c.dataset.award=bd?'1':'0';
+    c.innerHTML='<a class="img" target="_blank" rel="noopener"><img loading="lazy"><span class="ill">イメージ図</span><span class="ng">イラストを読み込めませんでした。</span></a><div class="body"><h3></h3><p class="co"></p><p class="desc"></p><div class="foot"><a class="link" target="_blank" rel="noopener">製品ページ →</a><a class="link ph" target="_blank" rel="noopener"></a></div></div>';
+    c.querySelector('.img').href=img;c.querySelector('.link').href=url;
+    const ph=c.querySelector('.ph');ph.href=img;ph.textContent='実物の写真（'+credit(name,img,url)+'）→';
+    if(bd){const b=document.createElement('span');b.className='badge '+(bd==='best'?'best':'hon');b.textContent=bd==='best'?'Best of Innovation':'Innovation Awards 受賞';c.querySelector('.img').appendChild(b);}
+    const im=c.querySelector('img');im.alt=name;im.referrerPolicy='no-referrer';
+    im.onerror=()=>c.querySelector('.img').classList.add('broken');
+    im.src=il;
+    c.querySelector('h3').textContent=name;c.querySelector('.co').textContent=co;c.querySelector('.desc').textContent=desc;
+    g.appendChild(c);
+  }
+  main.appendChild(sec);
+}
+fb.onclick=()=>{const on=fb.getAttribute('aria-pressed')!=='true';fb.setAttribute('aria-pressed',on);
+  document.querySelectorAll('.card').forEach(c=>c.hidden=on&&c.dataset.award!=='1');
+  document.querySelectorAll('section').forEach(s=>s.hidden=![...s.querySelectorAll('.card')].some(c=>!c.hidden));};
+</script>
+</body>
+</html>
